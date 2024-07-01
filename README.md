@@ -31,10 +31,10 @@ As regras de validação são:
 >     cd api-valida-senha
 
 2. Execute o projeto
-> dotnet restore
-> dotnet run
+> 	dotnet restore
+> 	dotnet run
 
-3. Abra no navegador a rota: http://localhost:8080/swagger/index.html
+4. Abra no navegador a rota: http://localhost:8080/swagger/index.html
 
 ## POST /valida-senha
 ### Request
@@ -45,24 +45,24 @@ As regras de validação são:
 ```
 ### Responses
 - False
-	```json
-	{
-	  "isValid": false,
-	  "erros": [
-	    "A senha deve ser maior que 9 caracteres",
-	    "A senha deve conter pelo menos um número",
-	    "A senha deve conter pelo menos uma letra minúscula",
-	    "A senha deve conter pelo menos uma letra maiúscula",
-	    "A senha deve conter pelo menos um caractere especial (!@#$%^&*()-+)",
-	    "A senha não pode conter caracteres repetidos",
-	    "A senha não deve conter espaço em branco"
-	  ]
-	}
-	```
+```json
+{
+  "isValid": false,
+  "erros": [
+    "A senha deve ser maior que 9 caracteres",
+    "A senha deve conter pelo menos um número",
+    "A senha deve conter pelo menos uma letra minúscula",
+    "A senha deve conter pelo menos uma letra maiúscula",
+    "A senha deve conter pelo menos um caractere especial (!@#$%^&*()-+)",
+    "A senha não pode conter caracteres repetidos",
+    "A senha não deve conter espaço em branco"
+  ]
+}
+```
 - True
-	```json
-	{
-	  "isValid": true,
-	  "erros": []
-	}
-	```
+```json
+{
+  "isValid": true,
+  "erros": []
+}
+```
