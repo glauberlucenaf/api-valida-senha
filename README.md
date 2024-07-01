@@ -27,12 +27,12 @@ As regras de validação são:
 ## :computer: Configuração de ambiente
 
 1. Clone o repositório
->     git clone https://github.com/glauberlucenaf/api-valida-senha.git
+>     git clone https://github.com/glauberlucena/api-valida-senha.git
 >     cd api-valida-senha
 
 2. Execute o projeto
-> 	dotnet restore
-> 	dotnet run
+>     dotnet restore
+>     dotnet run
 
 4. Abra no navegador a rota: http://localhost:8080/swagger/index.html
 
