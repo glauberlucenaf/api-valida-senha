@@ -56,5 +56,16 @@ namespace API.ValidaSenha.Tests
             validationResult.Should().NotBeNull();
             validationResult.IsValid.Should().BeFalse();
         }
+
+        [Fact]
+        public async void SenhaNaoInformada_deveRetornarBadRequest()
+        {
+            var command = new ValidaSenhaCommand { senha = "" };
+            //var response = new ValidaSenhaResult { IsValid = false, erros = new List<string>() };
+
+            var objResult = await _controller.ValidaSenha(command) as ObjectResult;
+            objResult.Should().NotBeNull();
+            objResult.StatusCode.Should().Be(StatusCodes.Status400BadRequest);
+        }
     }
 }
