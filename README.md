@@ -28,7 +28,7 @@ As regras de validação são:
 
 1. Clone o repositório
 >     git clone https://github.com/glauberlucena/api-valida-senha.git
->     cd api-valida-senha
+>     cd api-valida-senha/src/API.ValidaSenha
 
 2. Execute o projeto
 >     dotnet restore
