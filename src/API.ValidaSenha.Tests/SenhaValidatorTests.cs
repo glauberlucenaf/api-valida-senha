@@ -25,6 +25,7 @@ namespace API.ValidaSenha.Tests
         [InlineData("SenhaOk@1123", false)] // Senha com números repetidos
         [InlineData("SenhaaOk@123", false)] // Senha com letras repetidas
         [InlineData("Senha Ok@123", false)] // Senha com espaço
+        [InlineData("", false)] // Senha em branco
         public void DeveValidarSenhaCorretamente(string senha, bool expected)
         {
             var command = new ValidaSenhaCommand { senha = senha };

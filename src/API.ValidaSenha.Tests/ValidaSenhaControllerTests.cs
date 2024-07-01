@@ -10,12 +10,12 @@ using System.Runtime.CompilerServices;
 
 namespace API.ValidaSenha.Tests
 {
-    public class ControllerTests
+    public class ValidaSenhaControllerTests
     {
         private readonly Mock<IMediator> _mockMediator;
         private readonly ValidaSenhaController _controller;
 
-        public ControllerTests()
+        public ValidaSenhaControllerTests()
         {
             _mockMediator = new Mock<IMediator>();
             _controller = new ValidaSenhaController(_mockMediator.Object);
