@@ -36,7 +36,7 @@ As regras de validação são:
 
 3. Abra no navegador a rota: http://localhost:8080/swagger/index.html
 
-## POST /valida-senha
+## POST /senha/validacoes
 ### Request
 ```json
 {
@@ -44,7 +44,7 @@ As regras de validação são:
 }
 ```
 ### Responses
-- False
+- False (Status code 422)
 ```json
 {
   "isValid": false,
@@ -59,7 +59,7 @@ As regras de validação são:
   ]
 }
 ```
-- True
+- True (Status code 200)
 ```json
 {
   "isValid": true,

@@ -14,7 +14,7 @@ namespace API.ValidaSenha.Application.Validators
                 .Matches(@"[A-Z]").WithMessage("A senha deve conter pelo menos uma letra maiúscula")
                 .Matches(@"[!@#$%^&*()\-\+]").WithMessage("A senha deve conter pelo menos um caractere especial (!@#$%^&*()-+)")
                 .Must(VerificaCaracteresRepetidos).WithMessage("A senha não pode conter caracteres repetidos")
-                .Must(senha => !senha.Any(char.IsWhiteSpace)).WithMessage("A senha não deve conter espaço em branco");
+                .Must(senha => !senha.Any(char.IsWhiteSpace)).WithMessage("A senha não deve conter espaços em branco");
         }
 
         private bool VerificaCaracteresRepetidos(string senha)
