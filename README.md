@@ -34,7 +34,7 @@ As regras de validação são:
 >     dotnet restore
 >     dotnet run
 
-4. Abra no navegador a rota: http://localhost:8080/swagger/index.html
+3. Abra no navegador a rota: http://localhost:8080/swagger/index.html
 
 ## POST /valida-senha
 ### Request
