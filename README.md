@@ -15,7 +15,7 @@ As regras de validação são:
 
 ## :open_file_folder: Estrutura do projeto
 
-:file_folder: API.ValidaSenha: Contém a aplicação (regras de negócio, models, validators, etc)
+:file_folder: API.ValidaSenha: Contém a aplicação (regras de negócio, models, validators, etc)  
 :file_folder: API.ValidaSenha.Tests: Contém os testes
 
 
